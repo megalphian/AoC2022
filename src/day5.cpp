@@ -2,7 +2,7 @@
 // Created by Megnath Ramesh on 2022-12-05.
 //
 
-#include "include/day5.h"
+#include "day5.h"
 
 #include "vector"
 #include <fstream>
@@ -49,8 +49,7 @@ std::vector<Stack> all_stacks;
 void read_input_moves() {
     std::ifstream file("Day5/moves.txt");
     std::string str;
-    while (std::getline(file, str))
-    {
+    while (std::getline(file, str)) {
         std::vector<int> move;
         std::stringstream ss(str);
         std::string substr;
