@@ -47,7 +47,8 @@ std::vector<std::vector<int>> input_moves;
 std::vector<Stack> all_stacks;
 
 void read_input_moves() {
-    std::ifstream file("Day5/moves.txt");
+    std::string moves_filename = "Data/Day5/moves.txt";
+    std::ifstream file(moves_filename);
     std::string str;
     while (std::getline(file, str)) {
         std::vector<int> move;
@@ -90,6 +91,9 @@ void conduct_move(std::vector<int> move, bool is_9001) {
 }
 
 void day5(bool is_9001) {
+    input_moves.clear();
+    all_stacks.clear();
+
     read_input_moves();
     create_all_stacks();
     for (auto move: input_moves) {

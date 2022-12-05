@@ -27,7 +27,7 @@ int get_current_max() {
 }
 
 void day1(int top_n) {
-    std::string filename = "Day1/input.txt";
+    std::string filename = "Data/Day1/input.txt";
     std::ifstream file(filename);
     std::string str;
     std::vector<int> *calorie_store = new std::vector<int>;
